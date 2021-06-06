@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Operating System-Processes</title>
+</head>
+<body>
+<h1 style="text-align:center;color:red">Operating System-Processes</h1>
+<table border="1" cellspacing="0" cellpading="10">
+<tr><th style="color:black" bgcolor="silver" >Table of contents: </th></tr>
+<tr><td><a href="os_home.html" target="_blank">OS-Home</a></td></tr>
+<tr><td><a href="os_overview.html" target="_blank">OS-Overview</a></td></tr>
+<tr><td><a href="os_process.html" target="_blank">OS-Process</a></td></tr>
+<tr><td><a href="os_properties.html" target="_blank">OS-Properties</a></td></tr>
+<tr><td><a href="os_multithreading.html" target="_blank">OS-Multithreading</a></td></tr>
+</table>
+<h3 style="color:Red">Process</h3>
+<p>A process is basically a program in execution. The execution of a process must progress in a sequential fashion.</p>
+<p>A process is defined as an entity which represents the basic unit of work to be implemented in the system.</p>
+<p>To put it in simple terms, we write our computer programs in a text file and when we execute this program, it becomes a process which performs all the tasks mentioned in the program.</p>
+<p>When a program is loaded into the memory and it becomes a process, it can be divided into four sections ─ stack, heap, text and data. The following image shows a simplified layout of a process inside main memory −</p>
+<img src="process_components.jpg">
+<table border="1" cellspacing="0" cellpadding="5">
+<tr>
+<th bgcolor="silver"><b>S.N.</b></th>
+<th bgcolor="silver"><b>Component & Description</b></th>
+</tr>
+<tr>
+<td>1</td>
+<td>
+<b>Stack</b></br>
+<p>The process Stack contains the temporary data such as method/function parameters, return address and local variables.</p>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>
+<b>Heap</b><br>
+<p>This is dynamically allocated memory to a process during its run time.</p>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>
+<b>Text</b><br>
+<p>This includes the current activity represented by the value of Program Counter and the contents of the processor's registers.</p>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>
+<b>Data</b><br>
+<p>This section contains the global and static variables.</p>
+</td>
+</tr>
+</table>
+<h3 style="color:red">Process Life Cycle</h3>
+<p>When a process executes, it passes through different states. These stages may differ in different operating systems, and the names of these states are also not standardized.</p>
+
+<p>In general, a process can have one of the following five states at a time.</p>
+<img src="process_state.jpg">
+<table border="1" cellspacing="0" cellpadding="10">
+<tr>
+<th bgcolor="silver"><b>S.N.</b></th>
+<th bgcolor="silver"><b>State & Description</b></th>
+</tr>
+<tr>
+<td>1</td>
+<td>
+<b>Start</b><br>
+<p>This is the initial state when a process is first started/created.</p>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>
+<b>Ready</b><br>
+<p>The process is waiting to be assigned to a processor. Ready processes are waiting to have the processor allocated to them by the operating system so that they can run. Process may come into this state after Start state or while running it by but interrupted by the scheduler to assign CPU to some other process.</p>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>
+<b>Running</b><br>
+<p>Once the process has been assigned to a processor by the OS scheduler, the process state is set to running and the processor executes its instructions.</p>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>
+<b>Waiting</b><br>
+<p>Process moves into the waiting state if it needs to wait for a resource, such as waiting for user input, or waiting for a file to become available.</p>
+</td>
+</tr>
+<tr>
+<td>5</td>
+<td>
+<b>Terminated or Exit</b><br>
+<p>Once the process finishes its execution, or it is terminated by the operating system, it is moved to the terminated state where it waits to be removed from main memory.</p>
+</td>
+</tr>
+</table>
+
+
+
+
+</body>
+</html>

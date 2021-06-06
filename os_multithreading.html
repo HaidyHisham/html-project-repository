@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Operating System-Multithreading</title>
+</head>
+<body>
+<h1 style="text-align:center;color:blue">Operating System-Multithreading</h1>
+<table border="1" cellspacing="0" cellpading="10">
+<tr><th style="color:black" bgcolor="silver">Table of contents: </th></tr>
+<tr><td><a href="os_home.html" target="_blank">OS-Home</a></td></tr>
+<tr><td><a href="os_overview.html" target="_blank">OS-Overview</a></td></tr>
+<tr><td><a href="os_process.html" target="_blank">OS-Process</a></td></tr>
+<tr><td><a href="os_properties.html" target="_blank">OS-Properties</a></td></tr>
+<tr><td><a href="os_multithreading.html" target="_blank">OS-Multithreading</a></td></tr>    
+</table>
+<h3 style="color:red">What is Thread ?</h3>
+<p>A thread is a flow of execution through the process code, with its own program counter that keeps track of which instruction to execute next, system registers which hold its current working variables, and a stack which contains the execution history.</p>
+<p>A thread shares with its peer threads few information like code segment, data segment and open files. When one thread alters a code segment memory item, all other threads see that.</p>
+<p>A thread is also called a lightweight process. Threads provide a way to improve application performance through parallelism. Threads represent a software approach to improving performance of operating system by reducing the overhead thread is equivalent to a classical process.</p>
+<p>Each thread belongs to exactly one process and no thread can exist outside a process. Each thread represents a separate flow of control. Threads have been successfully used in implementing network servers and web server. They also provide a suitable foundation for parallel execution of applications on shared memory multiprocessors. The following figure shows the working of a single-threaded and a multithreaded process.</p>
+<img src="thread_processes.jpg">
+<h4 style="color:red">Advantages of Thread</h4>
+<ul>
+<li>Threads minimize the context switching time.</li>
+<li>Use of threads provides concurrency within a process.</li>
+<li>Efficient communication.</li>
+<li>It is more economical to create and context switch threads.</li>
+<li>Threads allow utilization of multiprocessor architectures to a greater scale and efficiency.</li>
+</ul>
+<h4 style="color:red">Types of Thread</h4>
+<p>Threads are implemented in following two ways: </p>
+<ul>
+<li><b>User Level Threads −</b> User managed threads.</li>
+<li><b>Kernel Level Threads −</b> Operating System managed threads acting on kernel, an operating system core.</li>
+</ul>
+
+</body>
+</html>
